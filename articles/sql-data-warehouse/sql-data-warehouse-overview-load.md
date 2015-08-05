@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="data-services"
-   ms.date="06/21/2015"
+   ms.date="08/04/2015"
    ms.author="mausher;barbkess"/>
 
 # Load data into SQL Data Warehouse
@@ -32,6 +32,7 @@ SQL Data Warehouse supports these standard data loading tools:
 - bcp command-line utility
 - PolyBase
 - SQL Server Integration Services (SSIS)
+- SqlBulkCopy Clas  (.NET Framework)
 - 3rd party data loading tools
 
 ### Azure Data Factory (ADF)
@@ -45,6 +46,12 @@ PolyBase is a Microsoft technology that simplifies data analysis by providing a 
 
 ### SQL Server Integration Services (SSIS)
 [SSIS][] is a platform for building enterprise-level data integration and transformation solutions. To build packages that connect to SQL Data Warehouse, use the standard [OLE DB destination adapter][] using an ADO.Net connection manager.
+
+### SqlBulkCopy Class (.NET Framework)
+[SqlBulkCopy][] lets you build custom .NET Framework based applications for loading into Azure SQL Data Warehouse. 
+[AZURE.NOTE] As a best practice, ensure that you set the BulkCopyTimeout to a reasonable timeout value for your business objective. 
+---
+   SqlBulkInsertCommand.BulkCopyTimeout = 300; 
 
 ### 3rd party tools
 SQL Data Warehouse supports leading industry solutions for data loading. For more details, see our list of [solution partners][].
@@ -65,6 +72,6 @@ For more development tips, see the [development overview][].
 [copy activity]: https://msdn.microsoft.com/library/dn835035.aspx
 [SQL Server destination adapter]: https://msdn.microsoft.com/library/ms141237.aspx
 [SSIS]: https://msdn.microsoft.com/library/ms141026.aspx
-
+[SqlBulkCopy]: https://msdn.microsoft.com/library/system.data.sqlclient.sqlbulkcopy.aspx
 
 <!--Other Web references-->
