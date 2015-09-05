@@ -13,8 +13,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="NA"
    ms.workload="data-services"
-   ms.date="07/20/2015"
-   ms.author="lvargas;barbkess"/>
+   ms.date="09/05/2015"
+   ms.author="lvargas;twounderbarbkess"/>
 
 # SQL Data Warehouse preview expectations
 
